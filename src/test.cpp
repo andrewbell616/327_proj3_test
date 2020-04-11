@@ -128,7 +128,7 @@ void testStringParser(const std::string &startTag,const std::string &endTag){
 	//deallocated in the destructor
 	String_to_pointer stp(TEST_STRING);
 	pChar = stp.getPointerToStringBegginning();
-	
+
 	try{
 		EXPECT_EQ (SUCCESS, sp.getDataBetweenTags(pChar, mv),"10",FIVE_POINTS);
 	} catch (...) {cout<<"Threw exception 10 "<<endl;}
